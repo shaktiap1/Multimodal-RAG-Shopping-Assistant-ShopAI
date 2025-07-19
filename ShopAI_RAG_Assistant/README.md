@@ -1,4 +1,4 @@
-# 🛍️ ShopAI – Your Smart Multimodal Shopping Assistant  
+# 🛍️ ShopAI – Your Smart Multimodal Shopping Assistant
 **Mentor:** Mr. Pranav Kumar  
 **Built with:** Python · Flask · React.js · Firebase · Groq · AssemblyAI · GCP  
 
@@ -6,19 +6,19 @@
 
 ### 👋 About the Project
 
-Ever felt lost scrolling through endless product listings? Me too. That’s why I built **ShopAI** — a smart, multimodal shopping assistant that answers your shopping queries using voice, text, and smart AI.
+Shopping online can be overwhelming — too many options, not enough context. **ShopAI** is built to fix that. It’s your personal shopping assistant powered by Retrieval-Augmented Generation (RAG), voice capabilities, and real-time syncing via Firebase.
 
-This is part of a broader AI GTM system I’m working on, and ShopAI is focused on making product discovery intuitive and intelligent — just like talking to a helpful friend who actually gets what you’re looking for.
+This is one of the core modules of my **GTM AI OS** suite — focused on AI-first user experiences.
 
 ---
 
 ### 🧠 What ShopAI Can Do
 
-- 🗣 Accepts voice and text input (AssemblyAI-ready)
-- 🔍 Uses Retrieval-Augmented Generation (RAG) to fetch relevant product info
-- 💬 Chats with users via a clean React frontend
-- 🔥 Syncs user context and messages in real time with Firebase
-- 🚀 Built for speed, scale, and clarity — with Groq API support
+- 🧑‍💬 Accepts voice + text queries from users (AssemblyAI-ready)
+- 🔎 Uses RAG (Retrieval-Augmented Generation) to deliver relevant answers
+- 💬 Chats through a clean React-based UI
+- 🔥 Syncs chats in real-time with Firestore
+- ⚡️ Backend is modular, fast, and Groq API-ready
 
 ---
 
@@ -28,7 +28,21 @@ This is part of a broader AI GTM system I’m working on, and ShopAI is focused 
 ```bash
 cd backend
 python -m venv venv
-./venv/Scripts/activate  # On Windows
+./venv/Scripts/activate
 pip install -r requirements.txt
 python run.py
+```
 
+#### 💻 Frontend Setup
+```bash
+cd frontend
+npm install
+npm start
+```
+
+#### 🗝️ Environment Variables (Backend)
+Create a `.env` file in the `/backend` folder:
+```env
+GOOGLE_CLOUD_PROJECT=your_project_id
+FIREBASE_CREDENTIALS=path/to/firebase_credentials.json
+```
