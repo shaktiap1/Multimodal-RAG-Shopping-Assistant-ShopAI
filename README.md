@@ -93,8 +93,8 @@ Automatically adapts personalization using:
 
 ### API Layer
 Flask-based microservices offering:
-- `POST /recommend` — multimodal recommendations  
-- `POST /feedback` — updates self-evolving personalization loop  
+- `POST /recommend`  multimodal recommendations  
+- `POST /feedback`  updates self-evolving personalization loop  
 
 ---
 
