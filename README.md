@@ -1,4 +1,4 @@
-# SHOP AI — Multimodal RAG Shopping Intelligence System  
+# SHOP AI  Multimodal RAG Shopping Intelligence System  
 **Self-Evolving Distributed Recommendation Pipeline**
 
 ## Overview
